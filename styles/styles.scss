@@ -4,3 +4,8 @@
 @import 'contact';
 @import 'blog';
 @import 'blog-detail';
+.custom-container{
+    width: 85%;
+    margin: auto;
+    box-sizing: border-box;
+}

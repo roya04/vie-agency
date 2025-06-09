@@ -1,0 +1,184 @@
+#ask{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #121F27;
+    position: relative;
+    h1{
+        color: #1d15bd;
+        font-weight: 600;
+        padding-top: 130px;
+        color: linear-gradient(90deg, rgba(29, 21, 189, 1) 0%, rgba(136, 17, 184, 1) 53%);
+    }
+    p{
+        color: gray;
+    }
+    .box{
+        &::before{
+            content: "";
+             width: 75%;
+             position: absolute;
+             right:  45%;
+             height: 2px;
+             padding: 2px;
+             bottom: 10%;
+        background: #1d15bd;
+        background: linear-gradient(90deg, rgba(29, 21, 189, 1) 0%, rgba(136, 17, 184, 1) 53%);
+
+
+        }
+    }
+
+}
+#touch{
+    width: 100%;
+    height: 200vh;
+    background-color: #121F27;
+    padding-top: 50px;
+    .contact-form {
+        text-align: left;
+        width: 90%;
+  padding: 30px;
+  background: transparent;
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:#00aaff;
+    
+
+    span {
+      color: #00aaff;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    input,
+    textarea {
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      background: transparent;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+
+    button {
+      background: #fff599;
+      color: #000;
+      font-weight: bold;
+      padding:17px;
+      border: none;
+      cursor: auto;
+      transition: background 0.3s ease;
+      font-size: 10px;
+      font-weight: 300;
+      width: 50%;
+
+      
+    }
+  }
+}
+.info{
+    width: 90%;
+    text-align: left;
+    padding: 33px 0;
+    h5{
+        color:#00AAFF;
+        font-size: 30px;
+        font-weight: 600;
+
+    }
+    h6{
+        color: whitesmoke;
+        padding-top: 45px;
+    }
+    p{
+        color: gray;
+        padding-top: 10px;
+        font-weight: 500;
+    }
+    span{
+        color: gray;
+        padding-top: 10px;
+        font-weight: 400;
+    }
+    .fonts{
+        padding-top: 40px;
+        i{
+            margin-inline: 7px;
+            color: whitesmoke;
+            background-color: #131417;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    }
+    
+
+}
+
+
+
+}
+#error{
+    height: 60vh;
+    width: 100%;
+    background-image: url(../images/icon_error.png);
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-size: cover;
+    position: relative;
+    .text{
+        position: absolute;
+        bottom: 0px;
+        line-height: 1.5;
+        font-size: 18px;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:576px){
+    #touch{
+        width: 100%;
+        height: 100vh;
+        .contact-form{
+            width: 75%;
+            text-align: left;
+        }
+    }
+}
+@media(min-width:768px){
+    #touch{
+        width: 100%;
+        height: 200vh;
+        .contact-form{
+            text-align: left;
+            width: 70%;
+        }
+        .info{
+            text-align: left;
+            width: 75%;
+
+        }
+    }
+}
+@media(min-width:994px){
+    #touch{
+        width: 100%;
+     height: 100vh;
+     
+     .contact-form{
+        width: 45%;
+        margin-right: 300px;
+     }
+    }
+}
